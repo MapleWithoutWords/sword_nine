@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\framework\NoRain.Service\NoRain.Service.csproj" />
+    <ProjectReference Include="..\Sword.Nine.DAL\Sword.Nine.DAL.csproj" />
+    <ProjectReference Include="..\Sword.Nine.Domain\Sword.Nine.Domain.csproj" />
+    <ProjectReference Include="..\Sword.Nine.Rule\Sword.Nine.Rule.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="IService\" />
+    <Folder Include="ServiceImpl\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

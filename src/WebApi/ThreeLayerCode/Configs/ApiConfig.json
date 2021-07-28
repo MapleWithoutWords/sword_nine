@@ -1,0 +1,17 @@
+{
+  "NameSpace": "",
+  "Reference": [
+    "System",
+    "System.Collections.Generic",
+    "System.Threading.Tasks",
+    "NoRain.Reposition",
+    "Microsoft.Extensions.Logging",
+    "NoRain.Reposition.BaseReposition",
+    "Microsoft.AspNetCore.Http",
+    "Microsoft.AspNetCore.Mvc",
+    "NoRain.Api",
+    "NoRain.Common"
+  ],
+  //数据库实体类输出目录
+  "FileOutputPath": "Controllers"
+}

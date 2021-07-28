@@ -1,0 +1,16 @@
+{
+  "NameSpace": "Sword.Nine",
+  "Reference": [
+    "System",
+    "System.Collections.Generic",
+    "System.Threading.Tasks",
+    "Sword.Nine.Domain",
+    "NoRain.Service",
+    "System.ComponentModel.DataAnnotations.Schema",
+    "Common.APICommon",
+    "NoRain.Common"
+  ],
+  "Sql": "",
+  //数据库实体类输出目录
+  "FileOutputPath": "Sword.Nine.Service/IService"
+}

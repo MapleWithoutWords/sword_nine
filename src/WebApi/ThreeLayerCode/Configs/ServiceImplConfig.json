@@ -1,0 +1,18 @@
+{
+  "NameSpace": "",
+  "Table": "*",
+  "IsCreateDto": false,
+  "Reference": [
+    "System",
+    "Microsoft.Extensions.Logging",
+    "NoRain.Reposition.BaseReposition",
+    "NoRain.Service",
+    "System.Threading.Tasks",
+    "System.Collections.Generic",
+    "Microsoft.AspNetCore.Http",
+    "NoRain.Common"
+  ],
+  "Sql": "",
+  //数据库实体类输出目录
+  "FileOutputPath": "ServiceImpl"
+}

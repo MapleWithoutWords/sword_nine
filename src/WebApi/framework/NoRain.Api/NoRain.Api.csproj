@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NoRain.Common\NoRain.Common.csproj" />
+    <ProjectReference Include="..\NoRain.Reposition\NoRain.Reposition.csproj" />
+    <ProjectReference Include="..\NoRain.Service\NoRain.Service.csproj" />
+  </ItemGroup>
+
+</Project>

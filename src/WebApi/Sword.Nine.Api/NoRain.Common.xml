@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NoRain.Common</name>
+    </assembly>
+    <members>
+        <member name="M:Microsoft.AspNetCore.Mvc.ActionResultExtensions.JsonPageData(Microsoft.AspNetCore.Mvc.ControllerBase,System.Object,NoRain.Common.PageDTO,System.String)">
+            <summary>
+            返回成功的数据：APIResult
+            </summary>
+            <param name="controller"></param>
+            <param name="data"></param>
+            <param name="page"></param>
+            <param name="msg">提示消息</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Mvc.ActionResultExtensions.JsonErrorData(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)">
+            <summary>
+            返回错误的信息：APIResult
+            </summary>
+            <param name="controller"></param>
+            <param name="errorMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Mvc.ActionResultExtensions.Json(Microsoft.AspNetCore.Mvc.ControllerBase,System.Object)">
+            <summary>
+            返回json数据
+            </summary>
+            <param name="controller"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Mvc.ActionResultExtensions.DownLoadFile(Microsoft.AspNetCore.Mvc.ControllerBase,System.String)">
+            <summary>
+            下载文件
+            </summary>
+            <param name="controller"></param>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Mvc.ActionResultExtensions.JsonNet(Microsoft.AspNetCore.Mvc.ControllerBase,System.Object)">
+            <summary>
+            返回json数据
+            </summary>
+            <param name="controller"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.IFormFileExtensions.SaveToWwwrootAsync(Microsoft.AspNetCore.Http.IFormFile,System.String,System.String@)">
+            <summary>
+            将文件保存在wwwroot目录下
+            </summary>
+            <param name="item">文件对象</param>
+            <param name="direname">目录名称:例如:staticFile/maintain,就在:C:/xxx/xxx/xxx/Wanna.EMS.Api/wwwroot/staticFile/maintain</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Http.IFormFileExtensions.SaveToWwwrootAsync(Microsoft.AspNetCore.Http.IFormFileCollection,System.String,System.String)">
+            <summary>
+            保存文件集合到wwwroot目录下,多个文件,路径以逗号分隔
+            </summary>
+            <param name="formFiles"></param>
+            <param name="fileExtStr">文件上传限制后缀,</param>
+            <param name="direName"></param>
+            <returns>Item1:文件路径,Item2:错误消息</returns>
+        </member>
+        <member name="T:Common.APICommon.IInjectFac">
+            <summary>
+            标记接口
+            </summary>
+        </member>
+        <member name="T:System.Text.Json.Serialization.DateTimeConverter">
+            <summary>
+            时间转换
+            </summary>
+        </member>
+        <member name="M:System.Text.Json.Serialization.DateTimeConverter.Read(System.Text.Json.Utf8JsonReader@,System.Type,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            从字符串转成datetime
+            </summary>
+            <param name="reader"></param>
+            <param name="typeToConvert"></param>
+            <param name="options"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.Text.Json.Serialization.DateTimeConverter.Write(System.Text.Json.Utf8JsonWriter,System.DateTime,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            从时间转成string
+            </summary>
+            <param name="writer"></param>
+            <param name="value"></param>
+            <param name="options"></param>
+        </member>
+        <member name="T:System.Text.Json.Serialization.DateTimeNullableConverter">
+            <summary>
+            时间转换
+            </summary>
+        </member>
+        <member name="T:System.Text.Json.Serialization.StringToIntConvert">
+            <summary>
+            .net core自带序列化扩展转换方法
+            </summary>
+        </member>
+        <member name="T:System.Text.Json.Serialization.StringToDoubleConvert">
+            <summary>
+            .net core自带序列化扩展转换方法
+            </summary>
+        </member>
+        <member name="T:System.Text.Json.Serialization.StringToFloatConvert">
+            <summary>
+            .net core自带序列化扩展转换方法
+            </summary>
+        </member>
+        <member name="T:System.ExcelImportAttribute">
+            <summary>
+            excel导入
+            </summary>
+        </member>
+        <member name="P:System.ExcelImportAttribute.ExcelColumnName">
+            <summary>
+            对应的excel列名
+            </summary>
+        </member>
+        <member name="P:System.ExcelImportAttribute.ExcelColumnType">
+            <summary>
+            string,datetime,bool,number
+            </summary>
+        </member>
+        <member name="M:System.ExcelImportAttribute.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name">对应excel列名</param>
+        </member>
+        <member name="T:System.FileConvertHelper">
+            <summary>
+            文件转换类
+            </summary>
+        </member>
+        <member name="M:System.FileConvertHelper.ExcelWordToHml(System.String)">
+            <summary>
+            转换excel文件和word文件
+            </summary>
+            <param name="filePath"></param>
+            <returns>如果是excel、word文件则转换返回新文件路径，其他文件返回空字符串</returns>
+        </member>
+        <member name="M:System.FtpHelper.#ctor">
+            <summary>
+            连接FTP
+            </summary>
+            <param name="FtpServerIP">FTP连接地址</param>
+            <param name="FtpRemotePath">指定FTP连接成功后的当前目录, 如果不指定即默认为根目录</param>
+            <param name="FtpUserID">用户名</param>
+            <param name="FtpPassword">密码</param>
+        </member>
+        <member name="M:System.FtpHelper.SetSetting(System.String,System.String,System.String)">
+            <summary>
+            设置
+            </summary>
+            <param name="FtpServerIP">FTP连接地址</param>
+            <param name="FtpRemotePath">指定FTP连接成功后的当前目录, 如果不指定即默认为根目录</param>
+            <param name="FtpUserID">用户名</param>
+            <param name="FtpPassword">密码</param>
+        </member>
+        <member name="M:System.FtpHelper.Download(System.String,System.String,System.String)">
+            <summary>
+            下载
+            </summary>
+            <param name="filePath"></param>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:System.FtpHelper.Delete(System.String)">
+            <summary>
+            删除文件
+            </summary>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:System.FtpHelper.GetFilesDetailList(System.String)">
+            <summary>
+            获取当前目录下明细(包含文件和文件夹)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.FtpHelper.GetFileList(System.String,System.String)">
+            <summary>
+            获取当前目录下文件列表(仅文件)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.FtpHelper.GetDirectoryList(System.String)">
+            <summary>
+            获取当前目录下所有的文件夹列表(仅文件夹)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:System.FtpHelper.DirectoryExist(System.String,System.String)">
+            <summary>
+            判断当前目录下指定的子目录是否存在
+            </summary>
+            <param name="RemoteDirectoryName">指定的目录名</param>
+        </member>
+        <member name="M:System.FtpHelper.FileExist(System.String,System.String)">
+            <summary>
+            判断当前目录下指定的文件是否存在
+            </summary>
+            <param name="RemoteFileName">远程文件名</param>
+        </member>
+        <member name="T:System.ISettingFac">
+            <summary>
+            标记接口，用于配置类
+            </summary>
+        </member>
+        <member name="M:System.DateTimeExtensions.IsDefaultValue(System.DateTime)">
+            <summary>
+            是否时默认时间
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.Is1990Time(System.DateTime)">
+            <summary>
+            是否是1990/01/01 00:00:00
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.IsDefaultOr1990Time(System.DateTime)">
+            <summary>
+            是否是1990/01/01 00:00:00或者默认时间
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.DateTimeExtensions.IsNoDefaultAndNo1990Time(System.DateTime)">
+            <summary>
+            是否不是1990/01/01 00:00:00或者默认时间
+            </summary>
+            <param name="time"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ObjectExtensions.ToInt(System.Object)">
+            <summary>
+            转换成int
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ObjectExtensions.Serialize(System.Object)">
+            <summary>
+            json序列化对象
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.ObjectCopy`2">
+            <summary>
+            对象拷贝
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <typeparam name="TRes"></typeparam>
+        </member>
+        <member name="M:System.ObjectCopy`2.Copy(`0)">
+            <summary>
+            实体映射，暂且不能映射导航属性。规则是：类中的属性名字必须一样
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:System.StreamExtensions">
+            <summary>
+            流扩展
+            </summary>
+        </member>
+        <member name="M:System.StreamExtensions.SaveFile(System.IO.Stream,System.String)">
+            <summary>
+            保存文件
+            </summary>
+            <param name="st"></param>
+            <param name="savePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.IsGuidAndNoGuidEmpty(System.String)">
+            <summary>
+            字符串不为空，不为空guid。是一个Guid
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.IsGuid(System.String)">
+            <summary>
+            字符串是否为guid
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.IsEmail(System.String)">
+            <summary>
+            判断是否是eamil
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.IsNullOrEmptyOrGuidEmpty(System.String)">
+            <summary>
+            字符串为null或者'' 或者000000-000000-00000-00000
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.XmlDeserialize``1(System.String)">
+            <summary>
+            反序列化xml
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="xmlContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.CreateDateDirectory(System.String)">
+            <summary>
+            在该目录下创建年月日目录
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.StringExtensions.CreateDirectory(System.String)">
+            <summary>
+            目录不存在则创建
+            </summary>
+            <param name="filePath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ValueTypeExtensions.GetTwoComposeNum(System.Int64)">
+            <summary>
+            获取该数的二进制组成数字
+            </summary>
+            <param name="actionValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ValueTypeExtensions.GetTwoComposeNum(System.Collections.Generic.IEnumerable{System.Int64})">
+            <summary>
+            获取该数字集合的二进制组成数字
+            </summary>
+            <param name="listVals"></param>
+            <returns></returns>
+        </member>
+        <member name="M:System.ValueTypeExtensions.IsCompose(System.Int64,System.Collections.Generic.List{System.Int64})">
+            <summary>
+            判断该数的二进制数字是否由集合里的数组成
+            </summary>
+            <param name="actionValue"></param>
+            <param name="list"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.MD5Helper.CalcMD5(System.String)">
+            <summary>
+            计算字符串的md5
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.MD5Helper.CalcMD5(System.Byte[])">
+            <summary>
+            计算byte数组的md5
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.MD5Helper.CalcMD5(System.IO.Stream)">
+            <summary>
+            计算流的MD5
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.MD5Helper.GetSalt(System.Int32)">
+            <summary>
+            获取一个随机的特殊字符串
+            </summary>
+            <param name="saltLen"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SPCS.Common.Helper.NpoiExcelHelper">
+            <summary>
+            npoi组件的excel操作
+            </summary>
+        </member>
+        <member name="P:SPCS.Common.Helper.NpoiExcelHelper.Instance">
+            <summary>
+            单例模式
+            </summary>
+        </member>
+        <member name="F:SPCS.Common.Helper.NpoiExcelHelper._instance">
+            <summary>
+            单例的实例
+            </summary>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.#ctor">
+            <summary>
+            私有化构造函数
+            </summary>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.GetList``1(System.IO.Stream,System.String@,System.String,System.String)">
+            <summary>
+            读取excel中的sheet转换成list集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="inStream"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.GetList``1(System.String,System.String@,System.String)">
+            <summary>
+            读取excel中的sheet转换成list集合
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="inStream"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.GetDataTable(System.IO.Stream,System.String,System.String)">
+            <summary>
+            读取excel中的sheet为datatable
+            </summary>
+            <param name="inStream"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.GetDataTable(System.String,System.String)">
+            <summary>
+            读取excel中的sheet为datatable
+            </summary>
+            <param name="filePath"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.GetAllSheet(System.IO.Stream,System.String)">
+            <summary>
+            获取excel所有的sheet页
+            </summary>
+            <param name="stream"></param>
+            <param name="fileExt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.GetAllSheet(System.String)">
+            <summary>
+            获取excel所有的sheet页
+            </summary>
+            <param name="stream"></param>
+            <param name="fileExt"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.Export``1(System.Collections.Generic.List{``0},System.String,System.String)">
+            <summary>
+            将list转换成excel
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.Export``1(System.String,System.Collections.Generic.List{``0},System.String)">
+            <summary>
+            将list写入到excel文件
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="list"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.Export(System.Data.DataTable,System.String,System.String)">
+            <summary>
+            将datatable写入到excel流中
+            </summary>
+            <param name="dt"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.Export(System.String,System.Data.DataTable,System.String)">
+            <summary>
+            将datatable写入到excel文件
+            </summary>
+            <param name="dt"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.Export(System.Collections.Generic.List{System.Data.DataTable},System.String)">
+            <summary>
+            将datatable集合写入到流
+            </summary>
+            <param name="tables"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.NpoiExcelHelper.Export(System.String,System.Collections.Generic.List{System.Data.DataTable})">
+            <summary>
+            将datatable集合写入到excel文件
+            </summary>
+            <param name="tables"></param>
+            <param name="fileNameExit"></param>
+            <param name="sheetName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.RSAHelper.CreateKey(System.Int32)">
+            <summary>
+            Create a pair of keys 
+            </summary>
+            <param name="strength"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.RSAHelper.Decrypt(System.String,System.String)">
+            <summary>
+            RSA decrypt method
+            </summary>
+            <param name="privateKey">SA algorithm private key</param>
+            <param name="decryptstring">A string that need to be decrypted</param>
+            <returns></returns>
+        </member>
+        <member name="M:SPCS.Common.Helper.RSAHelper.Encrypt(System.String,System.String)">
+            <summary>
+            this is RSA encrypt method.
+            </summary>
+            <param name="publicKey">RSA algorithm public key</param>
+            <param name="encryptstring">A string that needs to be encrypted</param>
+            <returns></returns>
+        </member>
+        <member name="P:NoRain.Common.APIResult.Code">
+            <summary>
+            返回code。0表示成功，1表示失败
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult.Data">
+            <summary>
+            数据实体类
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult.Msg">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult.Count">
+            <summary>
+            分页记录数
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult.Page">
+            <summary>
+            分页参数
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult`1.Code">
+            <summary>
+            返回code。0表示成功，1表示失败
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult`1.Data">
+            <summary>
+            数据实体类
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult`1.Msg">
+            <summary>
+            错误消息
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult`1.Count">
+            <summary>
+            分页记录数
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.APIResult`1.Page">
+            <summary>
+            分页参数
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.PageDTO.PageIndex">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.PageDTO.PageDataCount">
+            <summary>
+            一页显示多少数据
+            </summary>
+        </member>
+        <member name="P:NoRain.Common.PageDTO.Count">
+            <summary>
+            总数据数
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,18 @@
+{
+  "NameSpace": "Sword.Nine",
+  "Table": "*",
+  "IsCreateDto": false,
+  "Reference": [
+    "System",
+    "Microsoft.Extensions.Logging",
+    "Sword.Nine.Domain",
+    "Sword.Nine.Dao",
+    "NoRain.Reposition.BaseReposition",
+    "NoRain.Service",
+    "Microsoft.AspNetCore.Http",
+    "NoRain.Common"
+  ],
+  "Sql": "",
+  //数据库实体类输出目录
+  "FileOutputPath": "Sword.Nine.Service/ServiceImpl"
+}

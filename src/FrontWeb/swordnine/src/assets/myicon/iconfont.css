@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2682725 */
+  src: url('iconfont.woff2?t=1626700911829') format('woff2'),
+       url('iconfont.woff?t=1626700911829') format('woff'),
+       url('iconfont.ttf?t=1626700911829') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e6b2";
+}
+
+.icon-iconset0264:before {
+  content: "\e6a3";
+}
+
+.icon-weibiaoti46:before {
+  content: "\e63c";
+}
+
+.icon-left-template:before {
+  content: "\e62a";
+}
+
+.icon-moban:before {
+  content: "\e60a";
+}
+
+.icon-icon_huabanfuben:before {
+  content: "\e61d";
+}
+
+.icon-31gongyegongcheng_zhineng:before {
+  content: "\e671";
+}
+

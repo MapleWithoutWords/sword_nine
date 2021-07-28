@@ -1,0 +1,15 @@
+{
+  "NameSpace": "",
+  "Reference": [
+    "System",
+    "System.Collections.Generic",
+    "System.Threading.Tasks",
+    "NoRain.Reposition",
+    "Microsoft.Extensions.Logging",
+    "NoRain.Reposition.BaseReposition",
+    "System.Data",
+    "System.ComponentModel.DataAnnotations.Schema"
+  ],
+  //数据库实体类输出目录
+  "FileOutputPath": "IDAL"
+}

@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sword.Nine.Domain</name>
+    </assembly>
+    <members>
+        <member name="T:Sword.Nine.Domain.DataSoureceImportDto">
+            <summary>
+            数据源导入
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSoureceImportDto.UpdateOrInsertDataSourceList">
+            <summary>
+            新增或修改数据源
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSoureceImportDto.UpdateOrInsertDirectoryList">
+            <summary>
+            新增或修改目录
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSoureceImportDto.UpdateOrInsertClassList">
+            <summary>
+            新增或修改类别
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSoureceImportDto.UpdateOrInsertAttributeList">
+            <summary>
+            新增或修改属性
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.DirectoryClassTreeDto">
+            <summary>
+            目录类别树
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.Childrens">
+            <summary>
+            子节点
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.Id">
+            <summary>
+            节点id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.ParentId">
+            <summary>
+            上级节点id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.ParentName">
+            <summary>
+            上级节点id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.Code">
+            <summary>
+            代码
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.TableName">
+            <summary>
+            类别表名称：如果type为类别，则该字段有值
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.ClassDirectoryId">
+            <summary>
+            类别所属目录id，如果type为类别，则该字段有值
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.SeqNo">
+            <summary>
+            排序号
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryClassTreeDto.Type">
+            <summary>
+            节点类型：【0：目录】、【1：类别】
+            </summary>
+        </member>
+        <member name="M:Sword.Nine.Domain.DirectoryClassTreeDto.AddChildrens(System.Collections.Generic.List{Sword.Nine.Domain.DirectoryClassTreeDto})">
+            <summary>
+            添加子节点
+            </summary>
+            <param name="allDatas"></param>
+        </member>
+        <member name="T:Sword.Nine.Domain.MxCellDto">
+            <summary>
+            绘图模型
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Geometry">
+            <summary>
+            绘图位置信息
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Style">
+            <summary>
+            样式
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Vertex">
+            <summary>
+            指定该cell是否可被线连接
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Edge">
+            <summary>
+            是否是线
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Connectable">
+            <summary>
+            指定该cell是否可被线连接
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Visible">
+            <summary>
+            显示隐藏
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Collapsed">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.MxTransient">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Children">
+            <summary>
+            子集
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Id">
+            <summary>
+            id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Source">
+            <summary>
+            连接源头
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.Target">
+            <summary>
+            连接目标
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.MxObjectId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.MxCellDto.DataId">
+            <summary>
+            自定义属性：id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleAttributeSettingDto.AttributeName">
+            <summary>
+            属性名称
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleAttributeSettingDto.AttributeCode">
+            <summary>
+            属性编码
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleAttributeSettingDto.AttributeColumnName">
+            <summary>
+            属性列名
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleAttributeSettingDto.ClassId">
+            <summary>
+            类别id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleAttributeSettingDto.AttributeId">
+            <summary>
+            属性id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleAttributeSettingDto.RuleValues">
+            <summary>
+            规则值
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.RuleValue">
+            <summary>
+            规则值
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleValue.RuleId">
+            <summary>
+            规则id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleValue.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.RuleValue.AttributeId">
+            <summary>
+            所属属性id
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnClassAttributeListDto">
+            <summary>
+            实体类：类别属性
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Sword.Nine.Domain.SnClassAttributeListDto.ClassTableName" -->
+        <!-- Badly formed XML comment ignored for member "P:Sword.Nine.Domain.SnClassAttributeListDto.ClassName" -->
+        <!-- Badly formed XML comment ignored for member "P:Sword.Nine.Domain.SnClassAttributeListDto.ClassCode" -->
+        <!-- Badly formed XML comment ignored for member "P:Sword.Nine.Domain.SnClassAttributeListDto.ReferenceClassCode" -->
+        <!-- Badly formed XML comment ignored for member "P:Sword.Nine.Domain.SnClassAttributeListDto.ReferenceClassTableName" -->
+        <!-- Badly formed XML comment ignored for member "P:Sword.Nine.Domain.SnClassAttributeListDto.ReferenceClassName" -->
+        <member name="T:Sword.Nine.Domain.SnClassDto">
+            <summary>
+            类别dto
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDto.DirectoryName">
+            <summary>
+            目录名称
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDto.DirectoryCode">
+            <summary>
+            目录Code
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDto.ClassAttributeList">
+            <summary>
+            类的属性
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnRuleDto">
+            <summary>
+            规则dto
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleDto.ClassId">
+            <summary>
+            类别id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleDto.ClassAttributeId">
+            <summary>
+            类别属性id
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleDto.Value">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.ClassId">
+            <summary>
+            <para>类别id：外键（类别表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.ColumnName">
+            <summary>
+            <para>列名</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.DefaultValue">
+            <summary>
+            <para>默认值</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.Description">
+            <summary>
+            <para>描述</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.IsNullable">
+            <summary>
+            <para>是否非空</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.IsPrimary">
+            <summary>
+            <para>是否主键</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.Length">
+            <summary>
+            <para>长度</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.Precision">
+            <summary>
+            <para>精度</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.ReferenceId">
+            <summary>
+            <para>引用类别id：</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.Remark">
+            <summary>
+            <para>备注</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.AttributeImportModel.ValueType">
+            <summary>
+            <para>值类型</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.ClassImportModel.ClassDirectoryId">
+            <summary>
+            <para>类别目录id：外键（类别目录表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.ClassImportModel.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.ClassImportModel.DataSourceId">
+            <summary>
+            <para>数据源id：外键（数据源表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.ClassImportModel.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.ClassImportModel.Remark">
+            <summary>
+            <para>备注</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.ClassImportModel.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.ClassImportModel.TableName">
+            <summary>
+            <para>表名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.DatabaseName">
+            <summary>
+            <para>数据库名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.Description">
+            <summary>
+            <para>描述</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.Host">
+            <summary>
+            <para>主机</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.NameSpace">
+            <summary>
+            <para>命名空间</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.Password">
+            <summary>
+            <para>密码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.Port">
+            <summary>
+            <para>端口</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.Type">
+            <summary>
+            <para>类型：【0：MYSQL】、【1：SQLServer】、【2：Oracle】、【3：SqlLite】</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DataSourceImportModel.UserName">
+            <summary>
+            <para>用户名</para>
+            </summary>
+        </member>
+        <member name="M:Sword.Nine.Domain.DataSourceImportModel.ToEntity(System.String)">
+            <summary>
+            转换成数据库实体
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryImportModel.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryImportModel.DataSourceId">
+            <summary>
+            <para>数据源id：外键（数据源表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryImportModel.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryImportModel.ParentId">
+            <summary>
+            <para>上级目录id</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.DirectoryImportModel.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnClassDirectory">
+            <summary>
+            实体类：类别目录
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.GraphModel">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.Content">
+            <summary>
+            <para>内容</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.DataSourceId">
+            <summary>
+            <para>数据源id：外键（数据源表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.ParentId">
+            <summary>
+            <para>上级目录id</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.Path">
+            <summary>
+            <para>目录路径</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassDirectory.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnClass">
+            <summary>
+            实体类：类别表
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.ClassDirectoryId">
+            <summary>
+            <para>类别目录id：外键（类别目录表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.DataSourceId">
+            <summary>
+            <para>数据源id：外键（数据源表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.ParentId">
+            <summary>
+            <para>父类、父类必须是抽象类</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.Path">
+            <summary>
+            <para>路径</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.Remark">
+            <summary>
+            <para>备注</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.TableName">
+            <summary>
+            <para>表名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.TopId">
+            <summary>
+            <para>顶级类别id</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClass.Type">
+            <summary>
+            <para>类型：【0：业务类别】【1：抽象类】</para>
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnClassAttribute">
+            <summary>
+            实体类：类别属性
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.ClassId">
+            <summary>
+            <para>类别id：外键（类别表）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.ColumnName">
+            <summary>
+            <para>列名</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.DataSourceId">
+            <summary>
+            <para>所属数据源id</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.DefaultValue">
+            <summary>
+            <para>默认值</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.Description">
+            <summary>
+            <para>描述</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.InheritId">
+            <summary>
+            <para>继承属性id：（该属性是从上级类别哪个属性继承下来的，默认为空字符串）</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.IsNullable">
+            <summary>
+            <para>是否非空</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.IsPrimary">
+            <summary>
+            <para>是否主键</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.Length">
+            <summary>
+            <para>长度</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.Precision">
+            <summary>
+            <para>精度</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.ReferenceId">
+            <summary>
+            <para>引用l类别id：</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.Remark">
+            <summary>
+            <para>备注</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnClassAttribute.ValueType">
+            <summary>
+            <para>值类型</para>
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnDataSource">
+            <summary>
+            实体类：数据源表
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.DatabaseName">
+            <summary>
+            <para>数据库名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.Description">
+            <summary>
+            <para>描述</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.Host">
+            <summary>
+            <para>主机</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.NameSpace">
+            <summary>
+            <para>命名空间</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.Password">
+            <summary>
+            <para>密码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.Port">
+            <summary>
+            <para>端口</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.Type">
+            <summary>
+            <para>类型：【0：MYSQL】、【1：SQLServer】、【2：Oracle】、【3：SqlLite】</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnDataSource.UserName">
+            <summary>
+            <para>用户名</para>
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnRule">
+            <summary>
+            实体类：规则表
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRule.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRule.Description">
+            <summary>
+            <para>描述</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRule.EnumValue">
+            <summary>
+            <para>枚举值</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRule.Name">
+            <summary>
+            <para>名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRule.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRule.ValueType">
+            <summary>
+            <para>值类型：【0：布尔】</para>
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnRuleClassAttributeSetting">
+            <summary>
+            实体类：规则类别属性配置表
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleClassAttributeSetting.ClassAttributeId">
+            <summary>
+            <para>属性id</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleClassAttributeSetting.ClassId">
+            <summary>
+            <para>类别id</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleClassAttributeSetting.RuleId">
+            <summary>
+            <para>规则id</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleClassAttributeSetting.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnRuleClassAttributeSetting.Value">
+            <summary>
+            <para>值</para>
+            </summary>
+        </member>
+        <member name="T:Sword.Nine.Domain.SnTemplate">
+            <summary>
+            实体类：模板表
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnTemplate.AssemblyDirectory">
+            <summary>
+            <para>程序所在目录</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnTemplate.Code">
+            <summary>
+            <para>编码</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnTemplate.Description">
+            <summary>
+            <para>描述</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnTemplate.Name">
+            <summary>
+            <para>模板名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnTemplate.SeqNo">
+            <summary>
+            <para>排序号</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnTemplate.StartFileName">
+            <summary>
+            <para>启动文件名称</para>
+            </summary>
+        </member>
+        <member name="P:Sword.Nine.Domain.SnTemplate.Type">
+            <summary>
+            <para>类型：【0：后端】、【1·：前端】</para>
+            </summary>
+        </member>
+    </members>
+</doc>

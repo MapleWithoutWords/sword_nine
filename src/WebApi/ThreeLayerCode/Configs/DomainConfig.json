@@ -1,0 +1,14 @@
+{
+  "NameSpace": "Sword.Nine",
+  "IsCreateDto": false,
+  "Reference": [
+    "System",
+    "NoRain.Reposition",
+    "System.ComponentModel.DataAnnotations",
+    "SqlSugar",
+    "System.ComponentModel.DataAnnotations.Schema"
+  ],
+  "Sql": "",
+  //数据库实体类输出目录
+  "FileOutputPath": "Entities"
+}

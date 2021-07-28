@@ -1,0 +1,19 @@
+{
+  "NameSpace": "Sword.Nine",
+  "Reference": [
+    "System",
+    "System.Collections.Generic",
+    "System.Threading.Tasks",
+    "NoRain.Reposition",
+    "Microsoft.Extensions.Logging",
+    "NoRain.Reposition.BaseReposition",
+    "Sword.Nine.Domain",
+    "Microsoft.AspNetCore.Http",
+    "Microsoft.AspNetCore.Mvc",
+    "NoRain.Api",
+    "Sword.Nine.Service",
+    "NoRain.Common"
+  ],
+  //数据库实体类输出目录
+  "FileOutputPath": "Sword.Nine.Api/Controllers"
+}

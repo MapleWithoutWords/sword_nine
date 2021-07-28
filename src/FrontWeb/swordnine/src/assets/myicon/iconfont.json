@@ -1,0 +1,58 @@
+{
+  "id": "2682725",
+  "name": "swordNine",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15838501",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "554312",
+      "name": "代码",
+      "font_class": "iconset0264",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "605457",
+      "name": "代码生成",
+      "font_class": "weibiaoti46",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "3238366",
+      "name": "模板",
+      "font_class": "left-template",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "3315106",
+      "name": "模板",
+      "font_class": "moban",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "12683722",
+      "name": "智能",
+      "font_class": "icon_huabanfuben",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "20810367",
+      "name": "智能",
+      "font_class": "31gongyegongcheng_zhineng",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    }
+  ]
+}
