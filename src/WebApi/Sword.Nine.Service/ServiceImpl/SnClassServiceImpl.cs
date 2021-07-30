@@ -278,11 +278,11 @@ namespace Sword.Nine.Service
             Expression<Func<SnClassDto, bool>> expression = null;
             if (entity.Id.IsGuidAndNoGuidEmpty())
             {
-                expression = e => e.IsDeleted == false && e.Type == entity.Type && (e.TableName == entity.TableName || entity.Code == e.Code) && e.Id != entity.Id;
+                expression = e => e.IsDeleted == false && e.DataSourceId == entity.DataSourceId && e.Type == entity.Type && (e.TableName == entity.TableName || entity.Code == e.Code) && e.Id != entity.Id;
             }
             else
             {
-                expression = e => e.IsDeleted == false && e.Type == entity.Type && (e.TableName == entity.TableName || entity.Code == e.Code);
+                expression = e => e.IsDeleted == false && e.DataSourceId == entity.DataSourceId && e.Type == entity.Type && (e.TableName == entity.TableName || entity.Code == e.Code) && e.Id != entity.Id;
             }
             var repeatData = await DalImpl.ValidDataAsync(expression);
             if (repeatData)
